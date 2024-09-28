@@ -3,6 +3,7 @@
 // ‘Fizz’ if i is divisible by 3,
 // ‘Buzz’ if i is divisible by 5
 // ‘i’ as a string, if none of the conditions are true.
+
 function fizzBuzz(n) {
   // Write your code here
   for (let i = 1; i <= n; i++) {
