@@ -28,7 +28,7 @@ function duplicateCount(text) {
   }
 }
 
-//better solution
+//improved solution
 const duplicateCount = (string) => {
   // makes an array all lowercase and sorts the array in alpha order for easy comparrison
   let newString = string.toLowerCase().split("").sort();
