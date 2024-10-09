@@ -2,6 +2,6 @@
 // Examples:
 // solution('abc', 'bc') returns true
 // solution('abc', 'd') returns false
-function stringEndsWith(str, ending) {
-  return str.slice(ending.length - 1) === ending;
+function solution(str, ending) {
+  return str.endsWith(ending);
 }
