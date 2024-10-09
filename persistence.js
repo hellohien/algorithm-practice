@@ -10,11 +10,9 @@ function persistence(num) {
     return count;
   }
   while (currentNum >= 10) {
-    console.log("current num", num);
     // Convert the number to an array of digits
     // map(Number) convert each element to a number
     let numArr = currentNum.toString().split("").map(Number);
-    console.log("num arr", numArr);
     // Multiply all digits together
     currentNum = numArr.reduce((acc, digit) => acc * digit, 1);
     count++;
