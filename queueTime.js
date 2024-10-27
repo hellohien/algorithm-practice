@@ -27,3 +27,14 @@ function queueTime(customers, n) {
     return Math.max(...tills);
   }
 }
+
+//Improved solution
+function queueTime(customers, n) {
+  let tills = new Array(n);
+  tills.fill(0);
+  for (i in customers) {
+    let index = tills.indexOf(Math.min(...tills));
+    tills[index] += customers[i];
+  }
+  return Math.max(...tills);
+}
